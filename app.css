@@ -51,26 +51,43 @@ body {
     background-color: white;
     width: 40px;
     height: 40px;
-}/*
-.allb{
-    width: 300;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}*/
-div input[type=text]{
-    height: 46px;
-    width: 700px;
-    /*font-weight:700;*/
-    /*padding-left: 300px;*/
-    background: url(search.png) no-repeat left;
-    background-size: 21px;
-    background-color: whitesmoke;
-    margin: 5px;
-    border-radius: 30px;
-    padding: 1px 25px 1px 25px;
 }
-
+.form {
+    display: flex;
+    flex-direction: row;
+  }
+  .search-field {
+    width: 100%;
+    padding: 10px 35px 10px 10px;
+    margin: 0px;
+    margin-left: 3px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: whitesmoke;
+    border-left-color: white;
+    border-color: white;
+    outline: none;
+    border: 0;
+  }
+  
+  .search-button {
+    background: transparent;
+    border: 0 none white;
+    outline: none;
+    margin-left: -1px;
+  }
+  
+  .search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+  }
+  .container{
+    background-color: whitesmoke;
+    width: 50%;
+    border :1.5px solid black;
+    border-radius: 30px;
+  }
 .content{
     background-color:whitesmoke;
     display: block;
@@ -126,6 +143,11 @@ div input[type=text]{
     display: block;
     background-color: white;
 }
+.cat{
+    color: black;
+    font-size: small;
+    font-weight: 300;
+}
 .courseBlock > h1,h4,h6{
     line-height: 15px;
     margin: 2px;
@@ -139,7 +161,7 @@ div input[type=text]{
     align-items:center;
     justify-content:center;
 }
-@media (max-width:1000px){
+@media (max-width:1340px){
     .WIB{display: none;}
     .LIB{display: none;}
     .SUB{display: none;}
@@ -152,6 +174,9 @@ div input[type=text]{
         height: 1.5em;
         width: 1.5em;
     }
+}
+@media (max-width:700px){
+    .container{display: none;}
 }
 .checked {
     color: orange;
