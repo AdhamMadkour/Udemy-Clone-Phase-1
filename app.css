@@ -1,0 +1,158 @@
+body { 
+    margin:0px;
+    font-family: 'Roboto', sans-serif; 
+}
+.logo{
+    height: 34px;
+    width: 91px;
+    border: 10px;
+}
+.bars{
+    display: none;
+}
+.topnav {
+    margin: 0;
+    padding: 1em;
+    border: 0px;
+    height: 75px;
+    flex-wrap: wrap;
+    background-color: white;
+    display: flex;
+    /*align-self: auto;*/
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0px 1px 10px rgb(236, 225, 225);
+}
+.cartIcon{
+    height: 2em;
+    width: auto;
+    border: 1em;
+}
+.world {
+    width: 15px;
+    height: 15px;
+}
+.SUB{
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 40px;
+}
+.LIB{
+    background-color: white;
+    font-weight: bolder;
+    width: 80px;
+    height: 40px;
+    font:bold;
+}
+.WIB{
+    background-color: white;
+    width: 40px;
+    height: 40px;
+}/*
+.allb{
+    width: 300;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}*/
+div input[type=text]{
+    height: 46px;
+    width: 700px;
+    /*font-weight:700;*/
+    /*padding-left: 300px;*/
+    background: url(search.png) no-repeat left;
+    background-size: 21px;
+    background-color: whitesmoke;
+    margin: 5px;
+    border-radius: 30px;
+    padding: 1px 25px 1px 25px;
+}
+
+.content{
+    background-color:whitesmoke;
+    display: block;
+    width: 90%;
+    max-width: 1340px;
+    display: flex;
+    align-items:center;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content:space-around;
+    flex-wrap: wrap-reverse;
+    align-self: flex-start;
+    height: auto;
+    margin: 0%;
+}
+.CH{
+    display: block;
+    width: 90%;
+    max-width: 1340px;
+    display: flex;
+    align-items:flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 0%;
+}
+.ads{
+    background-color: white;
+    width: 400px;
+    min-width: 200px;
+    display: block;
+    height: 200px;
+    padding: 10px;
+    margin: 10px;
+}
+.coursesquare{
+    height: auto;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: white;
+    align-items:center;
+    justify-content:center;
+    padding: 10px;
+    border: 1px solid rgb(205, 205, 205);
+}
+.courseBlock{
+    width: 250px;
+    height: 225px;
+    font-size: medium;
+    display: block;
+    background-color: white;
+}
+.courseBlock > h1,h4,h6{
+    line-height: 15px;
+    margin: 2px;
+}
+.wrap{
+    height: auto;
+    margin-top: 2px;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: white;
+    align-items:center;
+    justify-content:center;
+}
+@media (max-width:1000px){
+    .WIB{display: none;}
+    .LIB{display: none;}
+    .SUB{display: none;}
+    .cartIcon{display: none;}
+    .span div{display: none;}
+    .cat{display: none;}
+    #sh{display: none;}
+    .bars{
+        display:block;
+        height: 1.5em;
+        width: 1.5em;
+    }
+}
+.checked {
+    color: orange;
+  }
