@@ -139,9 +139,15 @@ body {
 .courseBlock{
     width: 250px;
     height: 225px;
+    margin: 0.25em;
     font-size: medium;
     display: block;
     background-color: white;
+}
+.courseBlock >img{
+    width: 240px;
+    height: 135px;
+
 }
 .cat{
     color: black;
