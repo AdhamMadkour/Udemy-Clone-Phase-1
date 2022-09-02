@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-      <link rel="stylesheet" href="app.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   </head>
-   <body>
-      <!-- the nav bar -->
-      <div class="topnav">
-         <img class="bars" src="3bars.png" alt="3bars" />
-         <img class="logo" src="Udemy.png" alt="logo-udemy" />
-         <span class="cat" href="#Cat">Categories</span>
-         <!--<input class="cat" type="text" placeholder="Search for anything" />-->
-         <div class="container">
-            <form action="/" method="GET" class="form">
-               <button type="submit" class="search-button"><img src="search.png"></button>
-               <input type="search" placeholder="Search for anything" class="search-field" />
-               </button>
-            </form>
-         </div>
-         </span>  
+
+<head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Document</title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="app.css" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+      .nav-link {
+         display: block;
+         padding: 0.5rem 1rem;
+         color: black;
+         text-decoration: none;
+         transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+      }
+   </style>
+</head>
+
+<body>
+   <!-- the nav bar -->
+   <div class="topnav">
+      <img class="bars" src="3bars.png" alt="3bars" />
+      <img class="logo" src="Udemy.png" alt="logo-udemy" />
+      <span class="cat" href="#Cat">Categories</span>
+      <!--<input class="cat" type="text" placeholder="Search for anything" />-->
+      <div class="com">
+         <form class="form">
+            <button id="searchButton" type="submit" class="search-button"><img src="search.png"></button>
+            <input id="searchPlace" type="search" placeholder="Search for anything" class="search-field" />
+            </button>
          </form>
-         <span id="sh" href="#bus">Udemy Business</span>
-         <span class="cat" href="#Teach">Teach on Udemy</span>
-         <img class="cartIcon" src="Cart.png" alt="cart-icon" />
-         <button class="LIB">Log in</button>
-         <button class="SUB">Sign up</button>
-         <button class="WIB">
-         <img class="world" src="world.ico" alt="world-icon" />
-         </button>
       </div>
-      <!-- main website -->
-      <section class="wrap">
+      </span>
+      </form>
+      <span id="sh" href="#bus">Udemy Business</span>
+      <span class="cat" href="#Teach">Teach on Udemy</span>
+      <img class="cartIcon" src="Cart.png" alt="cart-icon" />
+      <button class="LIB">Log in</button>
+      <button class="SUB">Sign up</button>
+      <button class="WIB">
+         <img class="world" src="world.ico" alt="world-icon" />
+      </button>
+   </div>
+   <!-- main website -->
+   <section class="wrap">
       <!-- ads square -->
       <div class="content">
          <section class="ads">
@@ -52,74 +74,138 @@
       </div>
       <!-- list bar start from here -->
       <section class="CH">
-      <section class="headsec">
-         <h2>A broad selection of courses</h2>
-         <h1>
-            Choose from 185,000 online video courses with new additions published
-            every month
-         </h1>
-      </section>
-      <section class="coursesquare">
-         <section class="courseBlock">
-            <img src="c++.jpg" alt="abdulbari">
-            <h1>
-            Learn C++ Programming -Beginner to Advance- Deep Dive in C++</h2>
-            <h6>abdulbari</h6>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <h4>$ 199.99</h4>
+         <section class="headsec">
+            <h2>A broad selection of courses</h2>
+            <h2>
+               Choose from 185,000 online video courses with new additions published
+               every month
+            </h2>
          </section>
-         <section class="courseBlock">
-            <img src="c++.jpg" alt="abdulbari">
-            <h1>
-            Learn C++ Programming -Beginner to Advance- Deep Dive in C++</h2>
-            <h6>abdulbari</h6>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <h4>$ 199.99</h4>
-         </section>
-         <section class="courseBlock">
-            <img src="c++.jpg" alt="abdulbari">
-            <h1>
-            Learn C++ Programming -Beginner to Advance- Deep Dive in C++</h2>
-            <h6>abdulbari</h6>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <h4>$ 199.99</h4>
-         </section>
-         <section class="courseBlock">
-            <img src="c++.jpg" alt="abdulbari">
-            <h1>
-            Learn C++ Programming -Beginner to Advance- Deep Dive in C++</h2>
-            <h6>abdulbari</h6>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-            <h4>$ 199.99</h4>
-         </section>
-         <section class="courseBlock">
-            <img src="c++.jpg" alt="abdulbari">
-            <h1>
-            Learn C++ Programming -Beginner to Advance- Deep Dive in C++</h2>
-            <h6>abdulbari</h6>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <h4>$ 199.99</h4>
-         </section>
-      </section>
-   </body>
+         <!-- course section -->
+         <nav class="nav">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+               <li class="nav-item">
+                  <a class="nav-link active" id="Python-tab" data-toggle="tab" href="#home" role="tab"
+                     aria-controls="home" aria-selected="true">Python</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="Excel-tab" data-toggle="tab" href="#profile" role="tab"
+                     aria-controls="profile" aria-selected="false">Excel</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="Web-tab" data-toggle="tab" href="#messages" role="tab"
+                     aria-controls="messages" aria-selected="false">Web Development</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="JavaScript-tab" data-toggle="tab" href="#settings" role="tab"
+                     aria-controls="settings" aria-selected="false">JavaScript</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" id="Data-tab" data-toggle="tab" href="#settings" role="tab"
+                     aria-controls="settings" aria-selected="false">Data Science</a>
+               </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+               <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                  <section class="coursesquare" style="min-width: 1000px;">
+                     <style>
+                        .cards-wrapper {
+                           display: flex;
+                           justify-content: center;
+                        }
+
+                        .carousel-control-prev-icon {
+                           color: white;
+                           background-color: black;
+                           font-size: small;
+                           border-radius: 50%;
+
+                        }
+
+                        .carousel-control-next-icon {
+                           color: white;
+                           background-color: black;
+                           font-size: small;
+                           border-radius: 50%;
+
+                        }
+
+                        .card {
+                           margin: 0.5em;
+                        }
+                     </style>
+                     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+
+
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                           data-slide="prev">
+                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                           <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                           data-slide="next">
+                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                           <span class="sr-only">Next</span>
+                        </a>
+                     </div>
+
+
+
+                  </section>
+
+               </div>
+               <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+               <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
+               <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
+            </div>
+            <footer>
+               <h1>
+                  Top categories
+               </h1>
+               <div class="row">
+                  <div class="col-12 col-md-4 col-lg-3 col-sm-12">
+                     <img src="Top-category-design.jpg" alt="">
+                     <h4>Design</h4>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 col-sm-12">
+                     <img src="Top-category-development.jpg" alt="">
+                     <h4>Development</h4>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 col-sm-12">
+                     <img src="Top-category-marketing.jpg" alt="">
+                     <h4>Marketing</h4>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 col-sm-12">
+                     <img src="Top-category-it-and-software.jpg" alt="">
+                     <h4>IT and software</h4>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 col-sm-12">
+                     <img src="Top-category-personal-development.jpg" alt="">
+                     <h4>Personal Development</h4>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 col-sm-12">
+                     <img src="Top-category-business.jpg" alt="">
+                     <h4>Business</h4>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 col-sm-12">
+                     <img src="Top-category-photography.jpg" alt="">
+                     <h4>Photography</h4>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3 col-sm-12">
+                     <img src="Top-category-music.jpg" alt="">
+                     <h4>Music</h4>
+                  </div>
+               </div>
+            </footer>
+            <script src="script.js"></script>
+</body>
+
 </html>
